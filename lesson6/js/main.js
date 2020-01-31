@@ -6,8 +6,8 @@ let isNumber = function(num) {
 
 function gameBot() {
 
-  let target = 20;
-  //Math.floor(Math.random() * (100 - 1)) + 1;
+  let target = Math.floor(Math.random() * (100 - 1)) + 1;
+  //let target = 20;
 
   let numbers = +prompt('Угадай число от 1 до 100');
   console.log(numbers);
@@ -31,9 +31,7 @@ function gameBot() {
             } else {
               return;
             } 
-      // } else if (!confirm()) {
-      //   return;
-    }
+      }
 }
 
 gameBot();
